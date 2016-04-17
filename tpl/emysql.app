@@ -1,0 +1,10 @@
+{application,emysql,
+             [{description,"Emysql - Erlang MySQL driver"},
+              {vsn,"0.2"},
+              {modules,[emysql,emysql_app,emysql_auth,emysql_conn,
+                        emysql_conn_mgr,emysql_statements,emysql_sup,
+                        emysql_tcp,emysql_tracer,emysql_util,emysql_worker]},
+              {mod,{emysql_app,["%MAKETIME%"]}},
+              {registered,[]},
+              {applications,[kernel,stdlib,crypto]},
+              {env,[{default_timeout,15000}]}]}.

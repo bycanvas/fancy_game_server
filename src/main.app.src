@@ -1,0 +1,14 @@
+{application, main,
+ [
+  {description, "fancy game server"},
+  {vsn, "1.0.0"},
+  {modules, [main]},
+  {registered, []},
+  {applications, [
+                  kernel,
+                  stdlib
+                 ]},
+  {mod, {main, []}},
+  {env, []}
+ ]}.
+
